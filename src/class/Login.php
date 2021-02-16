@@ -5,6 +5,10 @@ class Login
     private $email;
     private $password;
     
+    public function __construct($email, $password){
+        $this->setEmail($email);
+        $this->setPassword($password);
+    }
     public function sign_on()
     {
         if ($this->email == "rodrigovieira@hotmail.com" and $this->password == "1234") {
@@ -33,7 +37,5 @@ class Login
         return $this;
     }
 }
-$logar = new Login();
-$logar->setEmail("rodrigovieira@hotmail.com");
-$logar->setPassword("1234");
+$logar = new Login("rodrigovieira@hotmail.com","1234");
 $logar->sign_on();
