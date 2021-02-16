@@ -4,7 +4,7 @@ class Person
     public $name;
     public $age;
 
-    public function speak()
+    public function falar()
     {
         echo $this->name . " tem " . $this->age . " anos e acabou de falar";
     }
@@ -12,4 +12,4 @@ class Person
 $rodrigo = new Person();
 $rodrigo->name = "rodrigo";
 $rodrigo->age = 18;
-$rodrigo->speak();
+$rodrigo->falar();

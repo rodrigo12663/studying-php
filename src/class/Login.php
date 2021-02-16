@@ -9,7 +9,7 @@ class Login
         $this->setEmail($email);
         $this->setPassword($password);
     }
-    public function sign_on()
+    public function Logar()
     {
         if ($this->email == "rodrigovieira@hotmail.com" and $this->password == "1234") {
             echo "Logado com sucesso";
@@ -38,4 +38,4 @@ class Login
     }
 }
 $logar = new Login("rodrigovieira@hotmail.com","1234");
-$logar->sign_on();
+$logar->Logar();
